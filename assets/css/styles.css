@@ -1,0 +1,41 @@
+@import "uikit-reset.css";
+@import "responsive.css";
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
+
+html {
+    --PrimaryColor: #eff032;
+    --SecondaryColor: #fbda0c;
+    background-color: #121212;
+}
+
+html,
+.uk-navbar-nav>li>a,
+.uk-heading-medium {
+    font-family: 'Arimo', sans-serif;
+}
+
+.uk-light .uk-text-lead {
+    font-family: 'Lobster', cursive;
+}
+
+header .uk-light {
+    color: white;
+}
+
+.hr-double {
+    width: 50%;
+    margin: 1rem 25% 1rem 25%;
+    padding: 0;
+    height: 1px;
+    border: none;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}

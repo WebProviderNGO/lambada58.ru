@@ -1,0 +1,43 @@
+[uk-lightbox] a {
+    cursor: zoom-in;
+}
+
+.uk-light .uk-navbar-nav>li>a {
+    color: white;
+    font-weight: 700;
+}
+
+.uk-light .uk-navbar-nav>li:hover>a {
+    color: var(--PrimaryColor);
+}
+
+.uk-light .uk-button-default {
+    font-weight: 700;
+    border-color: white;
+    border-width: 2px;
+}
+
+.uk-light .uk-text-lead a {
+    color: var(--PrimaryColor);
+}
+
+.uk-light .uk-heading-line> ::before,
+.uk-light .uk-heading-line> ::after {
+    border-bottom-color: rgba(240, 240, 50, 0.5);
+}
+
+.uk-modal-dialog {
+    background: #121212;
+}
+
+.uk-light .uk-close {
+    color: var(--PrimaryColor);
+}
+
+.uk-light .uk-close:hover {
+    color: white;
+}
+
+[class*="uk-modal-close-"] {
+    padding: 0;
+}
