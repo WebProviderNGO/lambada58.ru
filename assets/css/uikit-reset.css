@@ -17,7 +17,7 @@
     border-width: 2px;
 }
 
-.uk-light .uk-text-lead a {
+.uk-light .uk-text-lead, .uk-light .uk-text-lead a {
     color: var(--PrimaryColor);
 }
 
