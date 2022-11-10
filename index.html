@@ -16,13 +16,14 @@
 
 <body>
 
-    <header class="uk-background-fixed uk-background-center-center" style="background-image: url(assets/images/header/home-bg.jpg);" uk-height-viewport>
+    <header class="uk-background-fixed uk-background-center-center"
+        style="background-image: url(assets/images/header/home-bg.jpg);" uk-height-viewport>
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-logo uk-text-uppercase uk-text-bold" href="#">Lambada</a>
                 </div>
-                <div class="uk-navbar-center">
+                <div class="uk-navbar-center uk-visible@m">
                     <ul class="uk-navbar-nav">
                         <li><a href="#">Бронирование</a></li>
                         <li><a href="#">Меню</a></li>
@@ -32,13 +33,17 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="uk-navbar-right">
+                <div class="uk-navbar-right uk-visible@m">
                     <ul class="uk-navbar-nav">
                         <li><a href="#">Item</a></li>
                         <li><a href="#">Item</a></li>
                         <li><a href="#">Item</a></li>
                         <li><a href="#">Item</a></li>
                     </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                        uk-toggle="target: #offcanvas-nav-primary"></button>
                 </div>
             </nav>
         </div>
@@ -50,19 +55,146 @@
             <button class="uk-button uk-button-default">Забронировать</button>
         </div>
     </header>
-    
+
+    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <img src="content/lambada-vektor-nav.png" alt="">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="#">Бронирование</a></li>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Афиша</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Фотоотчёты</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+        </div>
+    </div>
+
     <div class="uk-section uk-section-large uk-light uk-text-center">
-        <div class="uk-container uk-container-expand">
-            <div class="uk-child-width-1-3 uk-grid-large uk-flex-center" uk-grid>
-                <div><h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Наши мероприятия</a></span></h2></div>
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
+                <div>
+                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Новинки</a></span>
+                    </h2>
+                </div>
             </div>
-            <div class="uk-child-width-1-3 uk-grid-large uk-flex-center" uk-grid>
-                <a href="#modalAficha" uk-toggle><img src="content/aficha/Afisha_DJOLEGOFF_1607.webp" alt=""></a>
-                <a href="#modalAficha" uk-toggle><img src="content/aficha/2_5447263474843391142.webp" alt=""></a>
+        </div>
+        <div class="uk-container uk-container-small">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
+                <ul class="uk-slider-items uk-grid">
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <a href="#modalAficha" uk-toggle><img src="content/aficha/Afisha_DJOLEGOFF_1607.webp"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <a href="#modalAficha" uk-toggle><img src="content/aficha/2_5447263474843391142.webp"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <a href="#modalAficha" uk-toggle><img src="content/aficha/AFISHA_NG_CORPORATE.webp"
+                                    alt=""></a>
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <a href="#modalAficha" uk-toggle><img src="content/aficha/AFISHA_NG2023.webp" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
             </div>
         </div>
     </div>
 
+    <div class="uk-section uk-section-large uk-padding-remove uk-light uk-text-center">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
+                <div>
+                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Меню</a></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <a href=""><img src="content/menu/bar/0.jpg" alt=""></a>
+    </div>
+
+    <div class="uk-section uk-section-large uk-light">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
+                <div>
+                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">О Lambada</a></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="uk-flex-middle uk-grid-large" uk-grid>
+                <div class="uk-width-2-3@s uk-panel">
+                    <p>Наше дело не так однозначно, как может показаться: высокотехнологичная концепция
+                        общественного уклада, в своём классическом представлении, допускает внедрение инновационных
+                        методов управления процессами. Прежде всего, сложившаяся структура организации требует
+                        анализа новых предложений. Также как новая модель организационной деятельности
+                        предопределяет высокую востребованность вывода текущих активов. Однозначно, сторонники
+                        тоталитаризма в науке являются только методом политического участия и функционально
+                        разнесены на независимые элементы. Но консультация с широким активом в значительной степени
+                        обусловливает важность направлений прогрессивного развития.</p>
+                </div>
+                <div class="uk-width-1-3@s"><img src="content/lambada-vektor.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="HomeContact uk-section uk-padding-remove uk-light">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
+                <div>
+                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Контакты</a></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="uk-flex-middle uk-flex-center" uk-grid>
+            <div class="uk-width-auto@m">
+                <div class="uk-padding-large">
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-text-large">Россия, г. Пенза, ул. Плеханова, 34</li>
+                        <li class="uk-text-large"><a class="uk-link-reset" href="tel:+78412221333">221-333</a></li>
+                        <li class="uk-text-large"><a class="uk-link-reset"
+                                href="mailto:info@lambada58.ru">info@lambada58.ru</a></li>
+                        <li class="uk-text-large">ЧТ 20:00 — 01:00, ПТ, СБ 20:00 – 05:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-expand@m"><iframe src="https://yandex.ru/map-widget/v1/?z=17&ol=biz&oid=185203759191"
+                    width="100%" height="600" frameborder="0"></iframe></div>
+        </div>
+    </section>
+
+    <footer class="uk-padding uk-padding-remove-horizontal uk-margin-large-top uk-background-secondary">
+        <div class="uk-container">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-auto@s uk-text-center">
+                    <img src="content/lambada-vektor-mini.png" alt="">
+                    <div class="uk-margin-small-top">© 2018 — 2022 LAMBADA</div>
+                </div>
+                <div class="uk-width-expand@s">
+                    <ul class="uk-subnav uk-flex-center" uk-margin>
+                        <li><a href="#">Бронирование</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="#">Афиша</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Фотоотчёты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div id="modalAficha" class="uk-flex-top" uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-light">
@@ -71,7 +203,7 @@
             <button class="uk-button uk-button-default uk-width-1-1 uk-margin-medium-top">Забронировать</button>
         </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="assets/css/app.css">
