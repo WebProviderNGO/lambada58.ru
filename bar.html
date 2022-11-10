@@ -16,8 +16,8 @@
 
 <body>
 
-    <header class="uk-background-fixed uk-background-center-center"
-        style="background-image: url(assets/images/header/home-bg.jpg);" uk-height-viewport>
+    <header class="uk-background-fixed uk-background-center-center uk-visible@m"
+        style="background-image: url(content/menu/bar/0.jpg);" uk-height-viewport>
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                 <div class="uk-navbar-left">
@@ -47,12 +47,18 @@
                 </div>
             </nav>
         </div>
-        <div class="uk-position-center uk-overlay uk-light uk-text-center">
-            <div class="uk-text-lead">Добро пожаловать</div>
-            <h1 class="uk-heading-medium uk-margin-remove-top uk-text-uppercase uk-text-bold">Lambada</h1>
-            <hr class="hr-double">
-            <div class="uk-margin-bottom uk-text-uppercase">Бар | Дискотека</div>
-            <button class="uk-button uk-button-default">Забронировать</button>
+    </header>
+    <header class="uk-hidden@m">
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-text-uppercase uk-text-bold" href="#">Lambada</a>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                        uk-toggle="target: #offcanvas-nav-primary"></button>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -75,7 +81,7 @@
         <div class="uk-container">
             <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
                 <div>
-                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Новинки</a></span>
+                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Барное меню</a></span>
                     </h2>
                 </div>
             </div>
@@ -83,49 +89,48 @@
         <div class="uk-container uk-container-small">
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
                 uk-slider="center: true; autoplay: true; autoplay-interval: 3000;">
-                <ul class="uk-slider-items uk-grid">
-                    <li class="uk-width-3-4">
-                        <div class="uk-panel">
-                            <a href="#modalAficha" uk-toggle><img src="content/aficha/Afisha_DJOLEGOFF_1607.webp"
-                                    alt=""></a>
-                        </div>
-                    </li>
-                    <li class="uk-width-3-4">
-                        <div class="uk-panel">
-                            <a href="#modalAficha" uk-toggle><img src="content/aficha/2_5447263474843391142.webp"
-                                    alt=""></a>
-                        </div>
-                    </li>
-                    <li class="uk-width-3-4">
-                        <div class="uk-panel">
-                            <a href="#modalAficha" uk-toggle><img src="content/aficha/AFISHA_NG_CORPORATE.webp"
-                                    alt=""></a>
-                        </div>
-                    </li>
-                    <li class="uk-width-3-4">
-                        <div class="uk-panel">
-                            <a href="#modalAficha" uk-toggle><img src="content/aficha/AFISHA_NG2023.webp" alt=""></a>
-                        </div>
-                    </li>
+                <ul class="uk-slider-items uk-grid" uk-lightbox>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/1.webp"><img src="content/menu/bar/1.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/2.webp"><img src="content/menu/bar/2.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/3.webp"><img src="content/menu/bar/3.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/4.webp"><img src="content/menu/bar/4.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/5.webp"><img src="content/menu/bar/5.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/6.webp"><img src="content/menu/bar/6.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/7.webp"><img src="content/menu/bar/7.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/8.webp"><img src="content/menu/bar/8.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/9.webp"><img src="content/menu/bar/9.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/10.webp"><img src="content/menu/bar/10.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/11.webp"><img src="content/menu/bar/11.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/12.webp"><img src="content/menu/bar/12.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/13.webp"><img src="content/menu/bar/13.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/14.webp"><img src="content/menu/bar/14.webp"
+                                alt=""></a></li>
+                    <li class="uk-width-3-4"><a href="content/menu/bar/15.webp"><img src="content/menu/bar/15.webp"
+                                alt=""></a></li>
                 </ul>
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slider-item="next"></a>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-visible@m"></ul>
             </div>
         </div>
     </div>
 
-    <div class="uk-section uk-section-large uk-padding-remove uk-light uk-text-center">
-        <div class="uk-container">
-            <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
-                <div>
-                    <h2 class="uk-heading-line uk-text-lead uk-text-center"><span><a href="">Меню</a></span>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <a href="bar.html"><img src="content/menu/bar/0.jpg" alt=""></a>
-    </div>
-
-    <div class="uk-section uk-section-large uk-light">
+    <!-- <div class="uk-section uk-section-large uk-light">
         <div class="uk-container">
             <div class="uk-child-width-1-3@m uk-grid-large uk-flex-center uk-margin-large-bottom" uk-grid>
                 <div>
@@ -147,7 +152,7 @@
                 <div class="uk-width-1-3@s"><img src="content/lambada-vektor.png" alt=""></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section class="HomeContact uk-section uk-padding-remove uk-light">
         <div class="uk-container">
