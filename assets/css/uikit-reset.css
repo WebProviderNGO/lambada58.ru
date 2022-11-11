@@ -17,7 +17,8 @@
     border-width: 2px;
 }
 
-.uk-light .uk-text-lead, .uk-light .uk-text-lead a {
+.uk-light .uk-text-lead,
+.uk-light .uk-text-lead a {
     color: var(--PrimaryColor);
 }
 
@@ -44,4 +45,18 @@
 
 .uk-light .uk-navbar-toggle {
     color: var(--PrimaryColor);
+}
+
+.uk-subnav>*>a:hover {
+    color: var(--PrimaryColor);
+}
+
+.uk-offcanvas-bar .uk-button-primary {
+    background-color: var(--PrimaryColor);
+    color: black;
+}
+
+.uk-offcanvas-bar .uk-button-primary:hover {
+    background-color: rgba(240, 240, 50, 0.75);
+    color: black;
 }

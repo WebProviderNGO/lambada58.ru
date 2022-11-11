@@ -24,6 +24,15 @@ header .uk-light {
     color: white;
 }
 
+.Soc svg {
+    fill: white;
+    height: 25px;
+}
+
+.Soc svg:hover {
+    fill: var(--PrimaryColor);
+}
+
 .hr-double {
     width: 50%;
     margin: 1rem 25% 1rem 25%;
@@ -42,4 +51,9 @@ header .uk-light {
 
 .HomeContact {
     color: white;
+}
+
+.PageH hr {
+    border-width: 2px;
+    border-color: white;
 }
