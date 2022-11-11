@@ -51,6 +51,10 @@
     color: var(--PrimaryColor);
 }
 
+.uk-offcanvas-bar .uk-nav-primary > li > a {
+    color: white;
+}
+
 .uk-offcanvas-bar .uk-button-primary {
     background-color: var(--PrimaryColor);
     color: black;
